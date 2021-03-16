@@ -215,8 +215,14 @@ class ChartViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         // チャートの描画アニメーション(2time)
         chart.animate(xAxisDuration: 10)
         
-        // グラフの色
-        chart.backgroundColor = .green
+    }
+    
+    /// ランキング画面に遷移
+    @IBAction func toRankingScreen(_ sender: Any) {
+        
+        let rankingVC = self.storyboard?.instantiateViewController(identifier: "rankVC") as! RankingViewController
+        
+        self.navigationController?.pushViewController(rankingVC, animated: true)
         
     }
 }

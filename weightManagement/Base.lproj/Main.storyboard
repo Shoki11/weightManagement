@@ -80,6 +80,9 @@
                                 <rect key="frame" x="308" y="92" width="86" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="star"/>
+                                <connections>
+                                    <action selector="toRankingScreen:" destination="UvR-e8-np5" eventType="touchUpInside" id="EvE-iL-Fh9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今月の増減(kg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TX-2e-0HJ">
                                 <rect key="frame" x="10" y="120" width="156" height="28"/>
@@ -102,6 +105,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0kN-WU-W8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2418.840579710145" y="93.75"/>
+        </scene>
+        <!--Ranking View Controller-->
+        <scene sceneID="YYy-0J-0Ic">
+            <objects>
+                <viewController storyboardIdentifier="rankVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="E98-u9-kda" customClass="RankingViewController" customModule="weightManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o5s-DP-W7c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eIu-y7-ucY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rlf-rG-akC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3204" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4qx-Cb-vLI">
